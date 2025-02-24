@@ -1,0 +1,200 @@
+
+
+/* Basic styles for the whole page 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ccc;
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed;
+  }
+  
+  /* Styling the homepage container */
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+  .homepage-container {
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px;
+    background-image: url('../images/f4.jpg'); /* Make sure the path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;  
+    width: 100vw;   
+}
+
+  
+  /* Heading Style */
+  .homepage-container h1 {
+    font-size: 2.5rem;
+    color: #efe235;
+    margin-bottom: 30px;
+  }
+  
+  /* Link styling */
+  .homepage-container a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect on the links */
+  .homepage-container a:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Add space between the links */
+  .homepage-container br {
+    margin: 15px 0;
+  }
+
+  
+  /*LOGIN PAGE CSS*/
+  /* Styling the login container */
+.login-container {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 80%;
+    height: 30%;
+    max-width: 400px;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading Style */
+  .login-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form styling */
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Input field styling */
+  .login-container input {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  /* Input field focus effect */
+  .login-container input:focus {
+    border-color: #007bff;
+    align-items: center;
+  }
+  
+  /* Submit button styling */
+  .login-container button {
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .login-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Disable button whilwhile loading */
+.login-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Loading text styling */
+  .login-container p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Error message styling */
+  .login-container p[style] {
+    color: red;
+    font-size: 1rem;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  /* styles.css or add in global styles */
+.profile-container {
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.profile-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.profile-info {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #555;
+  margin-top: 1.5rem;
+}
+
+.data-list {
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+.no-data {
+  color: #060505;
+  font-style: italic;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #222;
+}

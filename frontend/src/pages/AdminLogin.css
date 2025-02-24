@@ -1,0 +1,103 @@
+.admin-login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #1aafcd9a;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .admin-login-container h2 {
+    margin-bottom: 15px;
+  }
+  
+  input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 30%;
+    padding: 10px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .admin-dashboard {
+    padding: 20px;
+    
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background: #333;
+    color: white;
+  }
+  
+  .user-table {
+    width: 70%; /* Reduce width */
+    margin: 20px auto; /* Center the table */
+    border-collapse: collapse; /* Merge borders */
+    font-size: 14px; /* Reduce text size */
+  }
+  
+  .user-table th, .user-table td {
+    padding: 5px 10px; /* Reduce cell padding */
+    text-align: left;
+    border: 1px solid #ddd; /* Light border */
+  }
+  
+  .user-table th {
+    background-color: #191717;
+  }
+  
+  .user-table tr:hover {
+    background-color: #f9f9f9; /* Light hover effect */
+  }
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .center-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -1,0 +1,117 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background-color:powderblue;
+    color: #fff;
+    padding: 15px;
+    margin-top: 0%;
+    right: 0%;
+    width: 110%;
+  }
+  
+  
+  .navbar-left .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    gap: 2px;
+  }
+  
+  .navbar-center .nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+  
+  .navbar-center .nav-links li {
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .navbar-center .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  
+  .navbar-right .cart-icon,
+  .navbar-right .user-icon {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+    position: relative;
+  }
+  
+  .navbar-right .cart-count {
+    background-color: #f44336;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+  }
+
+
+  .buttonclass {
+    background-color: #ff4d4d; /* Red logout button */
+    color: white;
+    border: none;
+    padding: 10px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .buttonclass:hover {
+    background-color: #cc0000; /* Darker red on hover */
+    transform: scale(1.05);
+  }
+  
+  .buttonclass a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .buttonclass li {
+    list-style: none;
+  }
+
+
+  .text-gradient {
+    background: linear-gradient(90deg, #facc15, #34d399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .animated-path {
+    animation: moveLines 5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes moveLines {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+  }
+
+  
+  

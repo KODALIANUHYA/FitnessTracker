@@ -1,0 +1,103 @@
+.meal-plan-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .goal {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .meal-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .meal-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .meal-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .meal-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .meal-card img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .meal-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .meal-card ul li {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+  .bmi-card {
+    width: 350px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .bmi-card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .bmi-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .bmi-button {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .bmi-button:hover {
+    background-color: #0056b3;
+  }
+  
+  
