@@ -269,6 +269,32 @@ app.post('/api/store-food-calories', (req, res) => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ADMIN MODULE*/
 // 🔐 Admin Login Route
 app.post('/api/admin-login', (req, res) => {
@@ -290,6 +316,16 @@ app.post('/api/admin-login', (req, res) => {
       }
   });
 });
+
+
+
+
+
+
+
+
+
+
 
 
 // Secure Admin Dashboard API (Token validation inside this route)

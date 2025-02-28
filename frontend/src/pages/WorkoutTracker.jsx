@@ -3,13 +3,11 @@ import axios from 'axios';
 import './Dashboardcss.css'
 
 const WorkoutTracker = () => {
-  // State for workout list, type, duration, and calories burned
   const [workouts, setWorkouts] = useState([]);
   const [workoutType, setWorkoutType] = useState('');
   const [workoutDuration, setWorkoutDuration] = useState('');
   const [caloriesBurned, setCaloriesBurned] = useState(0);
 
-  // A simple calorie burn rate (calories per minute) for each workout type
   const calorieRates = {
     cardio: 5,
     strength: 6,
@@ -25,19 +23,18 @@ const WorkoutTracker = () => {
     walking: 5,
   };
 
-  // Function to calculate calories burned based on workout type and duration
   const calculateCalories = (type, duration) => {
     if (calorieRates[type]) {
-      return calorieRates[type] * duration; // calories per minute * duration
+      return calorieRates[type] * duration; 
     } else {
-      return 0; // If the workout type is not found
+      return 0; 
     }
   };
 
   const addWorkout = async () => {
     if (!workoutType || !workoutDuration || workoutDuration <= 0) {
       alert('Please provide valid workout type and duration!');
-      return; // Don't add if there's no type or invalid duration
+      return; 
     }
 
     const calories = calculateCalories(workoutType, workoutDuration);
@@ -47,26 +44,25 @@ const WorkoutTracker = () => {
       calories,
     };
 
-    // Store the workout in the database
     try {
       const response = await axios.post('http://localhost:5000/api/store-workout', workoutData, {
         headers: {
-          'Authorization': `Bearer ${localStorage.getItem('token')}`,  // Pass token for user verification
+          'Authorization': `Bearer ${localStorage.getItem('token')}`,  
         },
       });
 
       if (response.status === 200) {
         console.log(response.data.message);
-        setWorkouts([...workouts, workoutData]); // Update the workout list
+        setWorkouts([...workouts, workoutData]); 
         setWorkoutType('');
         setWorkoutDuration('');
-        setCaloriesBurned(0); // Reset calories after adding the workout
+        setCaloriesBurned(0); 
       } else {
-        alert('Error storing workout data: ' + response.data.message);
+        alert('Error storing workout data '); //error storing data
       }
     } catch (error) {
-      console.error('Error storing workout data:', error);
-      alert('Error storing workout data.');
+      console.error('Error storing workout data');//error storing data
+      alert(' Error storing workout data.');//error storing data
     }
   };
 

@@ -122,8 +122,8 @@ const CalorieTracker = () => {
       setFoodName(''); // Reset the food name
       setAmount(''); // Reset the amount input
     } catch (error) {
-      console.error('Error storing food calorie data:', error);
-      alert('Error storing food calorie data.');
+      console.error(' Error storing food calorie data:');//error storing data
+      alert(' Error storing food calorie data.');//error storing data
     }
   };
 

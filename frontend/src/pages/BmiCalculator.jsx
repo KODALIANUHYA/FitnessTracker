@@ -45,11 +45,11 @@ const BmiCalculator = () => {
       if (response.status === 200) {
         alert('BMI stored successfully!');
       } else {
-        alert('Error storing BMI data: ' + data.message);
+        alert(' Error storing BMI data ');//error storing data
       }
     } catch (error) {
-      console.error('Error:', error);
-      alert('Error storing BMI data.');
+      console.error(' Error storing BMI data ');//error storing data
+      alert('Error storing BMI data.');//error storing data
     }
   };
   
